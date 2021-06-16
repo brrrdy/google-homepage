@@ -1,0 +1,186 @@
+            /* debug to see div borders
+            body div {
+                border: 1px dotted red;
+            } */
+
+            body {
+                font-size: 14px;
+                font-weight: normal;
+                color: #222;
+                font-family: arial,sans-serif;
+                min-width: 550px;
+            }
+
+            body a {
+                text-decoration: none;
+                color: #222;
+            }
+
+            body a:hover {
+                text-decoration: underline;
+            }
+
+            html, body {
+                height: 100%;
+                padding:0;
+                margin:0;
+            }
+
+            .whole-hog {
+                display:flex;
+                flex-direction:column;
+                flex-wrap: nowrap;
+                height:100%;
+            }
+
+            .top-bar {
+                display: flex;
+                flex-direction:row;
+                justify-content:space-between;
+            }
+
+            .top-bar .left, .top-bar .right {
+                display: inline-flex;
+                padding: 1.6em 1.1em;
+            }
+
+            .top-bar .left a, .top-bar .right a {
+                padding-left: 0.75em;
+                padding-right: 0.75em;
+            }
+
+            .top-bar .right {
+                padding-right: 0.5em;
+            }
+
+            .top-bar .right a {
+                font-size:95%;
+                padding: 0 0.6em;
+            }
+
+            .top-bar .right .dots {
+                width: 23px;
+                height: 23px;
+                margin-top:-8px;
+                background-color:none;
+                padding: 0.5em;
+                border-radius: 2em;
+            }
+
+            .top-bar .right .dots:hover {
+                background-color: rgb(238, 238, 238);
+            }
+
+            .top-bar .user {
+                margin-top: -10px;
+                margin-left: -10px;
+                border-radius: 2em;
+                border: 4px solid rgb(238, 238, 238);
+            }
+
+            .logo {
+                padding-top: 3px;
+                padding-bottom: 1.5em;
+            }
+
+            .above-search {
+                display:flex;
+                flex-grow:1;
+                flex-direction:column;
+                justify-content:flex-end;
+                align-items:center;
+                min-height: 200px;
+            }
+
+            .search {
+                display:flex;
+                flex-direction: column;
+                align-items:center;
+            }
+
+            .search-box {
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                min-width: 555px;
+                border:1px solid rgb(230, 230, 230);
+                border-radius: 2em;
+                padding: 0.75em 1em;
+            }
+
+            .search-box:hover {
+                box-shadow: 0px 0px 5px rgb(203, 203, 203);
+            }
+
+            .search-box .magnify {
+                vertical-align: middle;
+            }
+            
+            .search-box .magnify i {
+                vertical-align:middle;
+                font-size:20px;
+                color: rgb(160, 160, 160);
+                margin-top: 3px;
+            }
+
+            .search-box .input-box {
+                flex-grow: 1;
+                padding: 0em 0.5em;
+            }
+
+            .search-box .input-box input {
+                border:none;
+                width:100%;
+                outline:none;
+            }
+
+            .search-box .voice-thingy {
+                width:24px;
+                height:24px;
+                padding-right: 5px;
+            }
+
+            .search-box .voice-thingy svg {
+                vertical-align: middle;
+            }
+
+            .search .search-buttons button {
+                background-color: rgb(249, 249, 249);
+                color: #3c4043;
+                font-family: arial, sans-serif;
+                font-size: 14px;
+                margin: 1.8em 0.28em;
+                border: 1px solid rgba(0,0,0,0);
+                border-radius: 5px;
+                padding: 6px 15px;
+                cursor: pointer;
+                line-height: 27px;
+            }
+
+            .search .search-buttons button:hover {
+                border: 1px solid lightgray;
+            }
+
+            .under-search {
+                flex-grow:2.2;
+            }
+
+            .bottom-bar {
+                margin-bottom:0;
+                display: flex;
+                flex-direction:row;
+                flex-shrink:0;
+                justify-content:space-between;
+                background-color: rgb(238, 238, 238);
+                padding: 1em 2em;
+            }
+
+            .cn-img {
+                height:12px;
+                width:12px;
+            }
+
+            .bottom-bar .left a, .bottom-bar .right a {
+                padding-left: 1em;
+                padding-right: 1em;
+            }
